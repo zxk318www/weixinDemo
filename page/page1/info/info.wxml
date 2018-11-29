@@ -1,0 +1,8 @@
+<view class="info-page">信息页面</view>
+<view>{{msg}}</view>
+<view wx:if="{{aflag==false}}">
+    <!--返回有tab的页面 需要用到 switchTab-->
+    <navigator  target="" url="/page/page1/helloword" hover-class="navigator-hover" open-type="switchTab">
+        返回上一层
+      </navigator>
+</view>

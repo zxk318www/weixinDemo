@@ -1,0 +1,6 @@
+.info-page{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50rpx;
+    color:#589585;
+    text-align: center
+}

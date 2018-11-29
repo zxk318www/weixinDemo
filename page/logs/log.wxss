@@ -1,0 +1,5 @@
+
+.time-font{
+    font-size: 20rpx;
+    text-align: center;
+}

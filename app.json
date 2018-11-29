@@ -1,0 +1,30 @@
+{
+    "pages":[
+        "page/page1/helloword",
+        "page/logs/log",
+        "page/page1/info/info"
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle":"black",
+        "navigationBarTitleText": "Demo",
+        "backgroundColorTop":"#0055852",
+        "enablePullDownRefresh":true
+      },
+      "tabBar": {
+        "list": [{
+          "pagePath": "page/page1/helloword",
+          "iconPath":"page/imag/he.png",
+          "selectedIconPath":"page/imag/he(1).png",
+          "text": "首页"
+          
+        }, {
+          "pagePath": "page/logs/log",
+          "iconPath":"page/imag/log.png",
+          "selectedIconPath":"page/imag/log(1).png",
+          "text": "日志"
+        }]
+      },
+      "debug": true
+}

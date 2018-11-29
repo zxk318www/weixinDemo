@@ -1,0 +1,34 @@
+<view class="view" bindtap="helloForMe" >
+    hello
+    <view class="view text">
+        {{msg}}
+    </view>
+</view>
+
+
+
+<swiper indicator-dots="{{indicatorDots}}" class="slide-image"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" >
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots" class="mtop btn"> indicator-dots </button>
+<button bindtap="changeAutoplay" class="btn"> stopplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000" /> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000" /> duration
+
+<button bindtap="viewTap" class="btn">click me</button>
+
+<view>{{object.text}}</view>
+
+<button bindtap="changeData" class="btn">改变数值</button>
+<button bindtap="changeItemData" class="btn">改变Object</button>
+
+<view bindtap="toInfo" style="color:blueviolet">跳转信息页面</view>
+<!--重定向不会将页面 加入到堆栈当中-->
+<navigator  target="" url="/page/page1/info/info?test=1&aflag=2" hover-class="navigator-hover" open-type="redirectTo">
+  重定向
+</navigator>

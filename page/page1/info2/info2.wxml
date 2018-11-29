@@ -1,0 +1,18 @@
+<view class="view">{{msg}}</view>
+<view bindtap="toshow">点我一下</view>
+
+<!--模版只能通过data传入数据-->
+<template name="odd">
+    <view>
+        I'm is odd. {{name}}
+    </view>
+</template>
+<template name="eve">
+    <view>
+        I'm is eve. {{age}}
+    </view>
+</template>
+
+<block wx:for="{{array}}">
+    <template is="{{item%2==0 ? 'eve' : 'odd'}}" data="{{...sz}}"></template>
+</block>

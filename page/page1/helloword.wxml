@@ -28,6 +28,7 @@
 <button bindtap="changeItemData" class="btn">改变Object</button>
 
 <view bindtap="toInfo" style="color:blueviolet">跳转信息页面</view>
+<view bindtap="toInfo2" style="color:blueviolet">跳转信息页面2</view>
 <!--重定向不会将页面 加入到堆栈当中-->
 <navigator  target="" url="/page/page1/info/info?test=1&aflag=2" hover-class="navigator-hover" open-type="redirectTo">
   重定向

@@ -2,7 +2,8 @@
     "pages":[
         "page/page1/helloword",
         "page/logs/log",
-        "page/page1/info/info"
+        "page/page1/info/info",
+        "page/page1/info2/info2"
     ],
     "window":{
         "backgroundTextStyle":"light",

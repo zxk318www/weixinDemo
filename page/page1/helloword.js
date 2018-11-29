@@ -74,6 +74,21 @@ Page({
             }
         })
     },
+    toInfo2:function(){
+        wx.navigateTo({
+            url: 'info2/info2?param=1',
+            success: function(res){
+                console.log(res);
+                // success
+            },
+            fail: function() {
+                // fail
+            },
+            complete: function() {
+                // complete
+            }
+        })
+    },
     onLoad:function(options){
         // 生命周期函数--监听页面加载
        

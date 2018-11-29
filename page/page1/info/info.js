@@ -1,8 +1,9 @@
 Page({
     data:{
         msg:'信息数据',
-        aflag:true
-        
+        aflag:true,
+        staffA:{name:'张三',age:'18'},
+        staffB:{name:"李四",age:'19'}
     },
    
     onLoad:function(options){

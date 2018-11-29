@@ -1,5 +1,5 @@
 <view class="info-page">信息页面</view>
-<view>{{msg}}</view>
+<view id="item-{{id}}">{{msg}}</view>
 <view wx:if="{{aflag==false}}">
     <!--返回有tab的页面 需要用到 switchTab-->
     <navigator  target="" url="/page/page1/helloword" hover-class="navigator-hover" open-type="switchTab">
@@ -17,3 +17,29 @@
 
 <template is="staff" data="{{...staffA}}"></template>
 <template is="staff" data="{{...staffB}}"></template>
+
+
+<!--算术运算 包含字符串运算-->
+<view>{{a + b}}+{{c}}+d</view>
+<view wx:if='{{a > 4}}'>a是否大于4(a的值:{{a}})</view>
+
+<!--wx:for-->
+<view wx:for="{{array}}" wx:for-index="index" wx:for-item="item">
+    {{index}}:{{item.message}}
+</view>
+
+<view wx:for="{{[1,2,3]}}" wx:for-item="i">
+    <view wx:for="{{[1,2,3,4]}}" wx:for-item="j">
+        <view wx:if="{{i<=j}}">
+            {{i}} * {{j}} = {{i*j}}
+        </view>
+    </view>
+
+</view>
+
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>

@@ -11,5 +11,8 @@ Page({
     },
     toshow: function(){
         common.sayHello('Zhangsnke');
+    },
+    test: function(e){
+        console.log(e);
     }
 })

@@ -16,3 +16,5 @@
 <block wx:for="{{array}}">
     <template is="{{item%2==0 ? 'eve' : 'odd'}}" data="{{...sz}}"></template>
 </block>
+
+<view data-aply="1" data-bbyu="2" bindtap="test"> DataSet Test</view>

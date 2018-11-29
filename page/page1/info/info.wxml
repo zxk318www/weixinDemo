@@ -43,3 +43,7 @@
 
 <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
 <button bindtap="addNumberToFront"> Add to the front </button>
+
+
+<import src="../info2/info2.wxml"/>
+<template is="odd"></template>

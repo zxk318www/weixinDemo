@@ -18,3 +18,8 @@
 </block>
 
 <view data-aply="1" data-bbyu="2" bindtap="test"> DataSet Test</view>
+
+<import src="item.wxml"/>
+<template is="item" data="{{stu: [{name:'张灿',socre:80},{name:'李思',socre:86},{name:'王武',socre:72},{name:'赵柳',socre:60}]}}"></template>
+
+<include src="../head/head.wxml"></include>

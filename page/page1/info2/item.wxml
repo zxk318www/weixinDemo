@@ -1,0 +1,5 @@
+<template name="item">
+    <block wx:for="{{stu}}" wx:for-item="item">
+        {{item.name}}
+    </block>
+</template>

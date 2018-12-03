@@ -23,3 +23,28 @@
 <template is="item" data="{{stu: [{name:'张灿',socre:80},{name:'李思',socre:86},{name:'王武',socre:72},{name:'赵柳',socre:60}]}}"></template>
 
 <include src="../head/head.wxml"></include>
+
+<view>{{wxsname.msg}}</view>
+
+<wxs module="wxsname">
+    var message= "I'm a wxs";
+
+    module.exports.msg = message;
+</wxs>
+
+<wxs module="ml">
+    var getMax = function(array){
+        var max = undefined;
+        for(var i =0;i<array.length;i++){
+            max = max === undefined ? array[i]:(max>= array[i]?max:array[i]);
+        }
+        return max;
+    }
+    module.exports.getMax = getMax;
+</wxs>
+<view>{{ml.getMax(array)}}</view>
+
+<wxs src="com.wxs" module="tools"></wxs>
+<view>{{tools.foo}}</view>
+<view>{{tools.bar(2)}}</view>
+

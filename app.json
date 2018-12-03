@@ -11,7 +11,8 @@
         "navigationBarTextStyle":"black",
         "navigationBarTitleText": "Demo",
         "backgroundColorTop":"#0055852",
-        "enablePullDownRefresh":true
+        "enablePullDownRefresh":true,
+        "pageOrientation":"auto"
       },
       "tabBar": {
         "list": [{
